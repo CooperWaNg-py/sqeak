@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="image.jpg">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        :root {
+            --image-size: 150px; /* Adjust size here */
+        }
+        img {
+            cursor: pointer;
+            width: var(--image-size);
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.jpg" alt="Click to Play Sound" onclick="playSound()">
+    <audio id="sound" src="sound.wav"></audio>
+
+    <script>
+        function playSound() {
+            document.getElementById('sound').play();
+        }
+    </script>
+</body>
+</html>
